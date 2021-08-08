@@ -88,6 +88,7 @@ function subscribeUser() {
     })
     .then(function (subscription) {
       console.log('User is subscribed.');
+      new Notification('User is subscribed.');
       localStorage.setItem('publickey', applicationServerPublicKey);
 
       updateSubscriptionOnServer(subscription);
