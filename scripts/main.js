@@ -68,6 +68,7 @@ function updateSubscriptionOnServer(subscription) {
   } else {
     subscriptionDetails.classList.add('is-invisible');
   }
+  document.getElementById('publickey').value = localStorage.getItem('publickey');
 }
 
 function subscribeUser() {
@@ -86,6 +87,7 @@ function subscribeUser() {
     })
     .then(function (subscription) {
       console.log('User is subscribed.');
+      localStorage.setItem('publickey', applicationServerPublicKey);
 
       updateSubscriptionOnServer(subscription);
 
