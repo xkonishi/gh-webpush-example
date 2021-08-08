@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  padding: 115px 0 32px 0;
+  padding: 15px 0 15px 0;
   background-color: #00bcd4;
   color: white;
 }
@@ -39,6 +39,10 @@ pre {
 
 pre code {
   word-break: break-word;
+}
+
+input {
+  width: 100%;
 }
 
 .is-invisible {
