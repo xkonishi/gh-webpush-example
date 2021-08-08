@@ -35,6 +35,7 @@ pre {
   white-space: pre-wrap;
   background-color: #EEEEEE;
   padding: 16px;
+  margin: 0px;
 }
 
 pre code {
