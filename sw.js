@@ -38,10 +38,10 @@ self.addEventListener('push', function (event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'Push Codelab';
+  const title = 'Web Push Sample';
   const options = {
-    body: 'Yay it works.',
-    icon: 'images/icon.png',
+    body: event.data.text(),
+    icon: 'images/logo192.png',
     badge: 'images/badge.png',
   };
 

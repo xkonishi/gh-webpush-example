@@ -64,6 +64,7 @@ function updateSubscriptionOnServer(subscription) {
 
   if (subscription) {
     console.log('subscription', subscription.toJSON())
+    console.log('subscription =', JSON.stringify(subscription))
     subscriptionJson.textContent = JSON.stringify(subscription);
     subscriptionDetails.classList.remove('is-invisible');
   } else {
